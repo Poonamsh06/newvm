@@ -70,7 +70,7 @@ class MyLikeState extends State<MyLike> {
   Widget build(BuildContext context) {
     return IconButton(
       icon: Icon(
-        widget.isLike ? Icons.favorite : Icons.favorite_border,
+        widget.isLike ? Icons.favorite : Icons.favorite_border_outlined,
         color: Colors.red,
         size: 30,
       ),

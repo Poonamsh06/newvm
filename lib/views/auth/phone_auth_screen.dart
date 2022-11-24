@@ -148,7 +148,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                 // -------------------------------otp-----------------
                 controller: _otpController,
                 decoration: const InputDecoration(
-                  labelText: 'otp you received',
+                  labelText: 'otp you received.',
                 ),
                 textInputAction: TextInputAction.done,
                 keyboardType: TextInputType.number,
@@ -213,7 +213,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text('didn\'t receive otp'),
+                    const Text('Didn\'t receive otp?'),
                     const SizedBox(width: 15),
                     TextButton(
                       child: const Text('Resend'),
@@ -222,7 +222,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                         _saveForm();
                         Get.snackbar(
                           "Thanks for login",
-                          "resending the otp, please wait ....",
+                          "Resending the otp, please wait ....",
                           icon: const Icon(Icons.person, color: Colors.black),
                           snackPosition: SnackPosition.BOTTOM,
                           backgroundColor:

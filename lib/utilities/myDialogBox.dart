@@ -20,10 +20,9 @@ class MyDialogBox {
       middleText: midText,
       titlePadding: const EdgeInsets.only(top: 10),
       contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 13),
-      confirm: ElevatedButton.icon(
-        icon: const Icon(Icons.check),
+      confirm: ElevatedButton(
         onPressed: () => Get.back(),
-        label: const Text(
+        child: const Text(
           'OK',
           style: kNormalSizeTextStyle,
         ),
@@ -83,7 +82,7 @@ class MyDialogBox {
           child: Container(
             padding: const EdgeInsets.only(top: 18),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(20),
               color: Colors.white,
             ),
             width: 200,

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -10,8 +12,8 @@ import 'views/home.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  User? currentUser = FirebaseAuth.instance.currentUser;
-  // log(currentUser!.email.toString());
+  User? currentUser = await FirebaseAuth.instance.currentUser;
+  log(currentUser.toString());
   // log(currentUser.phoneNumber.toString());
 
   if (currentUser != null) {
