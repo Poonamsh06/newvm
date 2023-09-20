@@ -159,7 +159,7 @@ Widget shareButton(String url, Color? color) {
         // log("play store link");
       } else {
         await Share.share(
-            "download and enjoy Biscuit app shorts ❤️  \n\n$urlpreview");
+            "Download and enjoy V-Media app shorts ❤️  \n\n$urlpreview");
       }
     },
     icon: Icon(

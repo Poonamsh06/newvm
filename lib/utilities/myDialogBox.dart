@@ -7,7 +7,7 @@ class MyDialogBox {
   static void normalDialog() {
     showDefaultDialog(
       'OOPS',
-      'sorry, something went wrong please try again after some time while we resolve your issue.',
+      'Sorry, something went wrong please try again after some time while we resolve your issue.',
     );
   }
 
@@ -60,7 +60,7 @@ class MyDialogBox {
                 const CircularProgressIndicator(),
                 const SizedBox(height: 12),
                 Text(
-                  'loading',
+                  'Loading',
                   style: kNormalSizeTextStyle.copyWith(
                     color: Colors.purple,
                   ),
@@ -73,7 +73,7 @@ class MyDialogBox {
     );
   }
 
-  static void loading({String message = 'loading...'}) {
+  static void loading({String message = 'Loading...'}) {
     Get.dialog(Scaffold(
       backgroundColor: Colors.transparent,
       body: Center(

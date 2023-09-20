@@ -100,7 +100,7 @@ class CommentScreen extends StatelessWidget {
                       if (commentQuerySnap.docs.isEmpty) {
                         return const Center(
                           child: Text(
-                              'no comments to show be the first to comment...'),
+                              'No comments to show be the first to comment...'),
                         );
                       }
                       return ListView.builder(
@@ -111,7 +111,7 @@ class CommentScreen extends StatelessWidget {
                           if (commentQuerySnap.docs.isEmpty) {
                             return const Center(
                               child:
-                                  Text('no comments, be the first to comment.'),
+                                  Text('No comments, be the first to comment.'),
                             );
                           }
                           return CommentListTile(
@@ -121,9 +121,9 @@ class CommentScreen extends StatelessWidget {
                         },
                       );
                     } else if (snapshot.hasError) {
-                      return const Text('error');
+                      return const Text('Error');
                     } else {
-                      return const Text('no comments to show');
+                      return const Text('No comments to show');
                     }
                   }
                 },
@@ -135,8 +135,8 @@ class CommentScreen extends StatelessWidget {
               child: TextField(
                 controller: _commentController,
                 decoration: InputDecoration(
-                  hintText: 'looking good !',
-                  labelText: 'comment',
+                  hintText: 'Looking good !',
+                  labelText: 'Comment',
                   suffixIcon: IconButton(
                     onPressed: () {
                       FocusScope.of(context).unfocus();

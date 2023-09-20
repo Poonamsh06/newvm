@@ -125,7 +125,7 @@ class _AddVideoScreenState extends State<AddVideoScreen> {
                             height: size.width, child: Image.file(vidThumb!)),
                     const SizedBox(height: 10),
                     const Text(
-                      'original video size:',
+                      'Original video size:',
                       style: kSmallSizeTextStyle,
                     ),
                     Text(
@@ -177,7 +177,7 @@ class _AddVideoScreenState extends State<AddVideoScreen> {
                           TextField(
                             controller: _videoNameController,
                             decoration: const InputDecoration(
-                              labelText: 'video name',
+                              labelText: 'Video name',
                               prefixIcon: Icon(Icons.video_collection_rounded),
                             ),
                             maxLength: 25,
@@ -185,7 +185,7 @@ class _AddVideoScreenState extends State<AddVideoScreen> {
                           TextField(
                             controller: _descriptionController,
                             decoration: const InputDecoration(
-                              labelText: 'description',
+                              labelText: 'Description',
                               prefixIcon: Icon(Icons.notes_rounded),
                             ),
                             maxLength: 50,

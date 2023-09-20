@@ -114,7 +114,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     }
                   } else {
                     return const Center(
-                      child: Text("check your network speed"),
+                      child: Text("Check your network speed"),
                     );
                   }
                 }),

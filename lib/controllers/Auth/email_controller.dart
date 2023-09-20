@@ -14,7 +14,7 @@ class EmailController {
   ) async {
     if (user == null) return;
 
-    MyDialogBox.loading(message: 'processing...');
+    MyDialogBox.loading(message: 'Processing...');
     try {
       await FirebaseFirestore.instance
           .collection('users')

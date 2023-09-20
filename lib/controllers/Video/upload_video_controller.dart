@@ -23,8 +23,8 @@ class UploadVideoController extends GetxController {
 
     if (mediaInfo == null) {
       MyDialogBox.showDefaultDialog(
-        'OOPS',
-        'sorry something went wrong, please try again after some time',
+        'OOPS!',
+        'Sorry something went wrong, please try again after some time',
       );
       return;
     }
@@ -68,7 +68,7 @@ class UploadVideoController extends GetxController {
     File thumbnail,
   ) async {
     try {
-      MyDialogBox.loading(message: 'uploading...');
+      MyDialogBox.loading(message: 'Uploading...');
       String uid = _auth.currentUser!.uid;
 
       DocumentSnapshot userDocSnapshot =

@@ -22,7 +22,7 @@ class VideoScreen extends StatelessWidget {
             if (snapshot.hasData) {
               final QuerySnapshot snapData = snapshot.data as QuerySnapshot;
               if (snapData.docs.isEmpty) {
-                return const Center(child: Text('no videos to show.'));
+                return const Center(child: Text('No videos to show.'));
               } else {
                 return PageView.builder(
                   itemCount: snapData.docs.length,
@@ -121,9 +121,9 @@ class VideoScreen extends StatelessWidget {
                 );
               }
             } else if (snapshot.hasError) {
-              return const Text('error');
+              return const Text('Error');
             } else {
-              return const Text('nothing to show');
+              return const Text('Nothing to show');
             }
           }
         },

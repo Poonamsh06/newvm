@@ -31,7 +31,7 @@ class NotificationScreen extends StatelessWidget {
               if (count == 0) {
                 return const Center(
                     child: Text(
-                  'no notificatons yet start exploring...',
+                  'No notificatons yet start exploring...',
                   style: kPNormalSizeBoldTextStyle,
                 ));
               } else {

@@ -75,15 +75,15 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                 // --------------------------------email-----------------
                 validator: (value) {
                   if (value == null) {
-                    return 'please provide your email.';
+                    return 'Please provide your email.';
                   } else if (!EmailValidator.validate(value)) {
-                    return 'please provide a valid email address.';
+                    return 'Please provide a valid email address.';
                   } else {
                     return null;
                   }
                 },
                 decoration: const InputDecoration(
-                  labelText: 'email address',
+                  labelText: 'Email address',
                 ),
                 autofillHints: const [AutofillHints.email],
                 textInputAction: TextInputAction.next,
@@ -104,7 +104,7 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                   }
                 },
                 decoration: InputDecoration(
-                  labelText: 'password',
+                  labelText: 'Password',
                   suffixIcon: IconButton(
                     icon: Icon(
                       isObscureText1 ? Icons.visibility_off : Icons.visibility,
@@ -140,7 +140,7 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                     }
                   },
                   decoration: InputDecoration(
-                    labelText: 'password',
+                    labelText: 'Password',
                     suffixIcon: IconButton(
                       icon: Icon(
                         isObscureText2
@@ -180,8 +180,8 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                     children: [
                       Text(
                         _authMode == AuthMode.login
-                            ? 'don\'t have an account ?'
-                            : 'i already have an account',
+                            ? 'Don\'t have an account ?'
+                            : 'I already have an account',
                       ),
                       const SizedBox(width: 15),
                       TextButton(
@@ -213,7 +213,7 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                             }
                           : null,
                       child: Text(
-                        showBtn ? 'resend link' : 'wait ${time.toString()} sec',
+                        showBtn ? 'Resend link' : 'wait ${time.toString()} sec',
                         style: TextStyle(
                           color: showBtn
                               ? Colors.white

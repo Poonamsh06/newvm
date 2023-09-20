@@ -42,9 +42,9 @@ class VideoSectionBuilder extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children: [
                     Icon(Icons.horizontal_rule_rounded),
                   ],
                 ),
@@ -64,7 +64,7 @@ class VideoSectionBuilder extends StatelessWidget {
                       ? const Center(
                           child: Padding(
                             padding: EdgeInsets.only(bottom: 400),
-                            child: Text('no videos uploaded yet'),
+                            child: Text('No videos uploaded yet'),
                           ),
                         )
                       : GridView.builder(
@@ -100,10 +100,10 @@ class VideoSectionBuilder extends StatelessWidget {
             ),
           );
         } else if (snapshot.hasError) {
-          return const Center(child: Text('error occured'));
+          return const Center(child: Text('Error occured'));
         } else {
           return const Center(
-            child: Text('no videos uploaded yet'),
+            child: Text('No videos uploaded yet'),
           );
         }
       },

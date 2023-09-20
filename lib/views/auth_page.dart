@@ -18,63 +18,22 @@ class Signin extends StatelessWidget {
           child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            height: deviceSize.height * 0.5,
-            decoration: const BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assests/background.png'),
-                    fit: BoxFit.fill)),
-            child: Stack(
-              children: <Widget>[
-                Positioned(
-                    left: 30,
-                    width: 80,
-                    height: 200,
-                    child: Container(
-                      decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage('assests/light-1.png'))),
-                    )),
-                Positioned(
-                  left: 140,
-                  width: 80,
-                  height: 150,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assests/light-2.png'))),
-                  ),
+          /*   Positioned(
+            child: Container(
+              margin: const EdgeInsets.only(top: 50),
+              child: const Center(
+                child: Text(
+                  "V-Media",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold),
                 ),
-                Positioned(
-                  right: 40,
-                  top: 40,
-                  width: 80,
-                  height: 150,
-                  child: Container(
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assests/clock.png'))),
-                  ),
-                ),
-                Positioned(
-                  child: Container(
-                    margin: const EdgeInsets.only(top: 50),
-                    child: const Center(
-                      child: Text(
-                        "V-Media",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  ),
-                )
-              ],
+              ),
             ),
-          ),
+          ),*/
           Padding(
-            padding: const EdgeInsets.fromLTRB(30, 0, 30, 30),
+            padding: const EdgeInsets.fromLTRB(30, 280, 30, 30),
             child: Column(children: <Widget>[
               Obx(
                 () => check == true

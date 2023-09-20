@@ -11,12 +11,14 @@ class ProfileController {
       return null;
     }
 
-    final croppedImageFile = cropImage(pickedFile);
-    return croppedImageFile;
+    final croppedImageFile = await cropImage(pickedFile);
+    if (croppedImageFile == null) return null;
+    final File imageFile = File(croppedImageFile.path);
+    return imageFile;
   }
 
-  Future<File?> cropImage(XFile file) async {
-    File? croppedImage = await ImageCropper().cropImage(
+  Future<CroppedFile?> cropImage(XFile file) async {
+    final croppedImage = await ImageCropper().cropImage(
       sourcePath: file.path,
       compressQuality: 20,
       aspectRatio: const CropAspectRatio(ratioX: 1, ratioY: 1),

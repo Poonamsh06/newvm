@@ -61,7 +61,7 @@ class MyLikeState extends State<MyLike> {
     //
     FirebaseHelper.updateDataToNotification(
       othUid: videoId,
-      message: 'like',
+      message: 'Like',
       comDes: '',
     );
   }

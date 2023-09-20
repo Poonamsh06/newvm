@@ -58,7 +58,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
     if (_otpController.text == '' || _otpController.text.length != 6) {
       MyDialogBox.showDefaultDialog(
         'Error',
-        'please enter the 6 digit otp you received to verify your number.',
+        'Please enter the 6 digit otp you received to verify your number.',
       );
       return;
     }
@@ -124,18 +124,18 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                       // ------------------------------phone---------------
                       validator: (value) {
                         if (value == null) {
-                          return 'please provide your phone number.';
+                          return 'Please provide your phone number.';
                         } else if (value.length != 10) {
-                          return 'your number must be 10 digits long.';
+                          return 'Your number must be 10 digits long.';
                         } else if (double.tryParse(value) == null) {
-                          return 'please provide a valid phone number.';
+                          return 'Please provide a valid phone number.';
                         } else {
                           return null;
                         }
                       },
                       controller: _phoneController,
                       decoration: const InputDecoration(
-                        labelText: 'phone number',
+                        labelText: 'Phone number',
                       ),
                       textInputAction: TextInputAction.done,
                       keyboardType: TextInputType.phone,
@@ -148,7 +148,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                 // -------------------------------otp-----------------
                 controller: _otpController,
                 decoration: const InputDecoration(
-                  labelText: 'otp you received.',
+                  labelText: 'Otp you received.',
                 ),
                 textInputAction: TextInputAction.done,
                 keyboardType: TextInputType.number,

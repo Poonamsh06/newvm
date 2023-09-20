@@ -93,7 +93,7 @@ class PhoneController {
       MyDialogBox.showDefaultDialog(
         e.code == 'invalid-verification-code' ? 'invalid otp' : e.code,
         e.code == 'invalid-verification-code'
-            ? 'Otp you have entered is invalid. please check once more and try again.'
+            ? 'Otp you have entered is invalid.Please check once more and try again.'
             : e.message.toString(),
       );
     } catch (e) {

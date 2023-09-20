@@ -192,7 +192,7 @@ class _ProfileFillUpScreenState extends State<ProfileFillUpScreen> {
       inAsyncCall: !settingDataOver,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('my profile'),
+          title: const Text('My profile'),
           centerTitle: true,
         ),
         body: Padding(
@@ -231,17 +231,17 @@ class _ProfileFillUpScreenState extends State<ProfileFillUpScreen> {
                     validator: (v) {
                       final value = v.toString().trim();
                       if (value == null) {
-                        return 'please provide your name.';
+                        return 'Please provide your name.';
                       } else {
                         final val = value.trim();
                         if (val == '') {
-                          return 'please provide your name.';
+                          return 'Please provide your name.';
                         }
                       }
                       return null;
                     },
                     decoration: InputDecoration(
-                      labelText: 'name',
+                      labelText: 'Name',
                       icon: Icon(
                         Icons.person_rounded,
                         size: 30,
@@ -255,7 +255,7 @@ class _ProfileFillUpScreenState extends State<ProfileFillUpScreen> {
                   TextFormField(
                     // ----------------about me----------------------
                     decoration: InputDecoration(
-                      labelText: 'about me',
+                      labelText: 'About me',
                       icon: Icon(
                         Icons.notes_rounded,
                         size: 30,
@@ -279,7 +279,7 @@ class _ProfileFillUpScreenState extends State<ProfileFillUpScreen> {
                       }
                     },
                     decoration: InputDecoration(
-                      labelText: 'e mail',
+                      labelText: 'E mail',
                       icon: Icon(
                         Icons.email_outlined,
                         size: 30,
@@ -310,7 +310,7 @@ class _ProfileFillUpScreenState extends State<ProfileFillUpScreen> {
                             }
                           },
                           decoration: InputDecoration(
-                            labelText: 'phone number',
+                            labelText: 'Phone number',
                             icon: Icon(
                               Icons.phone_in_talk_rounded,
                               size: 30,

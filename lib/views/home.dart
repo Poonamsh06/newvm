@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
   final myPages = [
     const VideoScreen(),
     const SearchScreen(),
-    const Center(child: Text('add')),
+    const Center(child: Text('Add')),
     const NotificationScreen(),
     ProfileScreen(uid: auth.currentUser!.uid),
   ];
@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
 
     if (!fetchedUserModel.isprofilecomplete) {
       MyDialogBox.showConfirmDialogBox(
-        message: 'hey, please complete your profile before adding videos',
+        message: 'Hey, please complete your profile before adding videos',
         noFun: () => Get.back(),
         noName: 'No thanks',
         yesFun: () => Get.to(() => ProfileFillUpScreen(user: widget.user)),
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
   void showVideoOptions() async {
     Get.defaultDialog(
       titlePadding: const EdgeInsets.only(top: 10),
-      title: 'Wanna add ?',
+      title: 'Wanna Add ?',
       titleStyle: kPNormalSizeBoldTextStyle,
       barrierDismissible: true,
       contentPadding: const EdgeInsets.symmetric(horizontal: 5),
@@ -85,7 +85,7 @@ class _HomeState extends State<Home> {
           ListTile(
             onTap: () => pickVideo(ImageSource.gallery),
             title: const Text(
-              'add from gallery',
+              'Add from gallery',
               style: kNormalSizeTextStyle,
             ),
             leading: const Icon(
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
           ListTile(
             onTap: () => pickVideo(ImageSource.camera),
             title: const Text(
-              'create a new one',
+              'Create a new one',
               style: kNormalSizeTextStyle,
             ),
             leading: const Icon(
@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
           navigationDestination(
             Icons.message,
             Icons.forum_outlined,
-            "messages",
+            "Messages",
           ),
           navigationDestination(
             Icons.person,
